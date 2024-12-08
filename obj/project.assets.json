@@ -3200,12 +3200,13 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\DELL\\source\\nihad12555\\ProjetAppBackend\\AppBackend\\AppBackend.csproj",
+      "projectUniqueName": "C:\\Users\\DELL\\RiderProjects\\ProjetAppBackend\\AppBackend.csproj",
       "projectName": "AppBackend",
-      "projectPath": "C:\\Users\\DELL\\source\\nihad12555\\ProjetAppBackend\\AppBackend\\AppBackend.csproj",
+      "projectPath": "C:\\Users\\DELL\\RiderProjects\\ProjetAppBackend\\AppBackend.csproj",
       "packagesPath": "C:\\Users\\DELL\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\DELL\\source\\nihad12555\\ProjetAppBackend\\AppBackend\\obj\\",
+      "outputPath": "C:\\Users\\DELL\\RiderProjects\\ProjetAppBackend\\obj\\",
       "projectStyle": "PackageReference",
+      "UsingMicrosoftNETSdk": false,
       "configFilePaths": [
         "C:\\Users\\DELL\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"

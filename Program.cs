@@ -37,6 +37,17 @@ builder.Services.AddAuthentication(options =>
         };
     });
 
+    builder.Services.AddCors(options =>
+    {
+        options.AddPolicy("AllowAngularApp", policy =>
+        {
+            //  le port de  frontend Angular
+            policy.WithOrigins("http://localhost:4200")
+                .AllowAnyHeader()
+                .AllowAnyMethod();
+        });
+    });
+
 builder.Services.AddControllers();
 builder.Services.AddScoped<ReservationService>();
 builder.Services.AddScoped<RoomAccessService>();
@@ -47,6 +58,7 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
 var app = builder.Build();
+app.UseCors("AllowAngularApp");
 
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
